@@ -29,5 +29,6 @@ package() {
     mkdir -p ${pkgdir}/etc
     install -Dm644 ${srcdir}/${_pkgname} ${pkgdir}/usr/share/cnchi/src/misc/${_pkgname}-newer
     install -Dm644 ${srcdir}/${_pkgname2} ${pkgdir}/etc/${_pkgname2}-newer
-    install -Dm644 ${srcdir}/${_pkgname3} ${pkgdir}/usr/share/cnchi/
+    install -Dm644 ${srcdir}/${_pkgname3} ${pkgdir}/usr/share/cnchi/${_pkgname3}-newer
 }
+
