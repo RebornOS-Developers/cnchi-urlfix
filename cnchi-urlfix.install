@@ -1,11 +1,29 @@
 post_install() {
-
 rm /usr/share/cnchi/src/misc/extra.py
 cp /usr/share/cnchi/src/misc/extra.py-newer  /usr/share/cnchi/src/misc/extra.py
 rm /usr/share/cnchi/src/misc/extra.py-newer
 chmod 644 /usr/share/cnchi/src/misc/extra.py
 rm /etc/arch-release
-cp /etc/arch-release-newer  /etc/arch-release
+cp /etc/arch-release-newer /etc/arch-release
 rm /etc/arch-release-newer
 chmod 644 /etc/arch-release
+rm /usr/share/cnchi/101_gnome.gschema.override
+cp /usr/share/cnchi/101_gnome.gschema.override-newer /usr/share/cnchi/101_gnome.gschema.override
+rm /usr/share/cnchi/101_gnome.gschema.override-newer
+chmod 644 /usr/share/cnchi/101_gnome.gschema.override
+}
+
+post_upgrade() {
+rm /usr/share/cnchi/src/misc/extra.py
+cp /usr/share/cnchi/src/misc/extra.py-newer  /usr/share/cnchi/src/misc/extra.py
+rm /usr/share/cnchi/src/misc/extra.py-newer
+chmod 644 /usr/share/cnchi/src/misc/extra.py
+rm /etc/arch-release
+cp /etc/arch-release-newer /etc/arch-release
+rm /etc/arch-release-newer
+chmod 644 /etc/arch-release
+rm /usr/share/cnchi/101_gnome.gschema.override
+cp /usr/share/cnchi/101_gnome.gschema.override-newer /usr/share/cnchi/101_gnome.gschema.override
+rm /usr/share/cnchi/101_gnome.gschema.override-newer
+chmod 644 /usr/share/cnchi/101_gnome.gschema.override
 }
